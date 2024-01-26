@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="one">
+        <div class="basket" id="basket" onclick="checkBasket()">
+            <div class="baskeContent" id="basketContent" onclick="closeBasket()">
+                <div class="topBasket"></div>
+                <div class="bottomBasket"></div>
+            </div>
+        </div>
+        <div class="signBoard" id="signBoard"></div>
+        <div class="signBoardBlank" id="signBoardBlank">
+            <div class="signBoardText" id="signBoardText"></div>
+            <div class="optionsContainer" id="optionsContainer" ></div>
+        </div>
+        <div class="field" id="field"></div>
+        <div class="idBook" id="idBook" onclick="openBook()">
+            <div class="page" id="page" onclick="closeBook()"></div>
+        </div>
+        <div class="gameResults">
+            <div class="resultsHeader">
+                <h2>Here is your basket with all the mushrooms you collected</h2>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <button class="playButton" id="playButton" onclick="startGame()">PLAY</button>
+        <button class="endButton" id="endButton">END</button>
+        <button class="resetButton" id="resetButton">RESET</button>
+
+    </div>
+</body>
+</html>
+
