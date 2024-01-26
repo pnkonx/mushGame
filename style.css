@@ -19,26 +19,28 @@ body {
    background-repeat: no-repeat;
    background-position: center center;
    transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
-   top: 5%;
+   top: 2%;
    right: 2%;
-   margin-right: 2%;
-   width: 100px;
-   height: 100px;
+   
+   width: 12%;
+   height: 12%;
    cursor: grab;
    display: none;
 }
 .basketContent {
-    position: absolute;
-    top:2%;
-    right: 8%;
-    transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
-    border: 2px solid #7a3c06;
-    background-color: tan;
-    width: 430px;
-    height: 100px;
-    display: none;
-    font-weight: bold;
-    border-radius: 10px;
+  position: absolute;
+  top:2%;
+  right: 2%;
+  transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+  border: 2px solid #7a3c06;
+  background-color: tan;
+  width: 43%;
+  height: 11.5%;
+  display: none;
+  font-weight: bold;
+  border-radius: 10px;
+  background-size: contain;
+  cursor: pointer;
   }
 
 .topBasket {
@@ -62,15 +64,15 @@ body {
     background-position: center center;
     width: 85%;
     height: 35%;
-    top:10%;
+    top:12%;
     left: 2%;
 
 }
 .signBoardBlank {
-    position: absolute;
+    position: sticky;
     width: 85%;
     height: 35%;
-    top:10%;
+    top:14%;
     left: 2%;
    min-width: 400px;
    min-height: 200px;
@@ -99,75 +101,70 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 80px;
-    height: 120px;
-    right: 2%;
+    width: 13%;
+    height: 12%;
+    right: 1%;
     top: 70%;
     cursor: pointer;
     display: none;
 }
 .page {
     position: absolute;
-    top: -300px;
-    right: 10px;
-    width: 800px; /* Adjust the expanded width as needed */
-    height: 700px;
+    bottom: 1%;
+    right: 2%;
+    width: 60%; /* Adjust the expanded width as needed */
+    height: 60%;
     transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
     background-image: url(src/idBookPage2.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    
+    cursor: pointer;
     display: none;
   }
 
 .playButton {
     position: absolute;
-    width: 15%;
-    min-height: 5vh; /* Set a minimum height for the button */
-    height: auto; /* Let the height adjust based on content */
+    width: 20%;
+    height: 20%;
+     /* Set a minimum height for the button */
+     /* Let the height adjust based on content */
     left: 60%;
-    top: 75%;
-    background-color: blue;
-    border: 8px solid darkblue;
-    color: lightblue;
-    font-weight: bold;
-    font-size: 2vw;
-    border-radius: 10px;
+    top: 60%;
+    background-image: url(src/playButton.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .endButton {
     position: absolute;
-    top: 8%; /* Adjust as needed */
-    left: 3%;
-    background-color: #FFBd43;
-    border: 2px #FFa500 solid;
-    border-radius: 5px;
-    color: #FF8000;
-    width: 5%;
-    height: auto;
-    min-height: 4vh;
-    font-size: 18px;
-    font-weight: bold;
+    top: 5%; /* Adjust as needed */
+    left: 5%;
+    background-image: url(src/endButton.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 9%;
     cursor: pointer;
     display: none;
   }
+    
   .resetButton{
     position: absolute;
     display: none;
-    width: 15%;
-    min-height: 5vh; /* Set a minimum height for the button */
-    height: auto; /* Let the height adjust based on content */
-    left: 80%;
-    top: 75%;
-    background-color: blue;
-    border: 8px solid darkblue;
-    color: lightblue;
-    font-weight: bold;
-    font-size: 2vw;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    width: 20%;
+    height: 20%; /* Let the height adjust based on content */
+    left: 60%;
+    top: 60%;
+    background-image: url(src/replayButton.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     cursor: pointer;
   }
   .gameResults {
@@ -197,7 +194,6 @@ body {
      position: absolute;
     width: calc(95% - 25%);
     height: 35vh;
-    
     bottom: 0;
     left: 0;
     opacity: 0.2;
