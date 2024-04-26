@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Courier New', Courier, monospace; 
     
 }
 .container {
@@ -34,7 +34,7 @@ body {
   transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
   border: 2px solid #7a3c06;
   background-color: tan;
-  width: 43%;
+  width: 65%;
   height: 11.5%;
   display: none;
   font-weight: bold;
@@ -160,7 +160,7 @@ body {
     width: 20%;
     height: 20%; /* Let the height adjust based on content */
     left: 60%;
-    top: 60%;
+    top: 70%;
     background-image: url(src/replayButton.png);
     background-size: contain;
     background-position: center center;
@@ -170,8 +170,8 @@ body {
   .gameResults {
     display: none;
      position: absolute;
-     width: 50%;
-     height: 30%;
+     width: 60%;
+     padding: 10px;
      background-color: tan;
      border: 2px solid #7a3c06;
      border-radius: 10px;
@@ -180,13 +180,14 @@ body {
      background-size: contain;
      background-position: center center;
      background-repeat: no-repeat;
-     top: 10%;
+     top: 20%;
      left: 25%;
    }
    .resultsHeader{
     width: 100%;
     height: 15px;
     text-align: center;
+    font-size: 5px;
   }
 
    .field {
@@ -199,4 +200,25 @@ body {
     opacity: 0.2;
     margin: auto;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 680px) {
+    .rotate90 {
+        transform: rotate(90deg);
+        transform-origin: center;
+        width: 100vh; /* Use viewport height to fill the screen horizontally */
+        height: 100vw; /* Use viewport width to fill the screen vertically */
+       /* background-size: contain;
+        background-position: center bottom;*/
+    }
+    .gameResults {
+      top: 35%;
+    }
+
+    .resetButton {
+      left: unset;
+      top: unset;
+      bottom: -50px;
+      right: 10px;
+    }
   }

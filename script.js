@@ -12,6 +12,7 @@ const playButton = document.getElementById('playButton');
   const topBasket = document.getElementById('topBasket');
   const bottomBasket = document.getElementById('bottomBasket');
   const basketContent = document.getElementById('basketContent');
+  const resultSize = document.getElementById('resultSize');
 
   let displayedStatements = [];
   let mushroomCounts = {};
@@ -220,8 +221,9 @@ function endGame() {
   gameResults.style.display = 'block';
   // Clear existing content in gameResults
   gameResults.innerHTML = '<div id="resultsHeader"><h2>Here is your Basket with all the mushrooms you collected</h2></div>';
-
-  gameResults.style.height = '400px';
+  
+  /*gameResults.style.fontSize = '.7em';*/
+  gameResults.style.height = '35vh';
   // Iterate through each mushroom species
   mushroomSpecies.forEach(mushroom => {
     const speciesName = mushroom.name;
@@ -229,7 +231,7 @@ function endGame() {
 
     // Display the name and total number in the gameResults div
     gameResults.innerHTML += `<div id="${speciesName.toLowerCase()}" style="text-align: center; margin: 5px;">
-      <p style="font-size: 20px; font-weight: bold;">Number of ${speciesName} Mushrooms Collected: ${speciesCount}</p>
+      <p style="font-size: .8em; font-weight: bold;">${speciesName} Mushrooms Collected: ${speciesCount}</p>
     </div>`;
   });
 

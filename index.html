@@ -6,9 +6,9 @@
     <title>Mushroom Forager</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="rotate90">
     <div class="container" id="one">
         <div class="basket" id="basket" onclick="checkBasket()"></div>
         <div class="basketContent" id="basketContent" onclick="closeBasket(event)">
@@ -30,10 +30,10 @@
                 <h2>Here is your basket with all the mushrooms you collected</h2>
             </div>
             <div id="morel"></div>
-            <div id="porcini"></div>
-            <div id="chant"></div>
-            <div id="shrimp"></div>
-            <div id="lobster"></div>
+            <div id="porcini resultSize"></div>
+            <div id="chant resultSize"></div>
+            <div id="shrimp resultSize"></div>
+            <div id="lobster resultSize"></div>
         </div>
         <div class="playButton" id="playButton" onclick="startGame()"></div>
         <div class="endButton" id="endButton" onclick="endGame()"></div>
